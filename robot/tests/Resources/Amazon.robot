@@ -7,7 +7,7 @@ Resource          PO/SearchResults.robot
 Resource          PO/SignIn.robot
 Resource          PO/TopNav.robot
 
-Library  SeleniumLibrary
+Library  SeleniumLibrary  30
 
 *** Keywords ***
 Search for Products
@@ -22,7 +22,7 @@ Select Product from Search Results
 
 Add Product to Cart
     Product.Add to Cart
-    Cart.Verify Product Added
+    # Cart.Verify Product Added
 
 Begin Checkout
     Cart.Proceed to Checkout

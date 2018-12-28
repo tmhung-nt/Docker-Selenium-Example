@@ -1,5 +1,5 @@
 *** Settings ***
-#Library  SeleniumLibrary
+#Library  SeleniumLibrary  30
 
 *** Keywords ***
 Verify Search Completed
