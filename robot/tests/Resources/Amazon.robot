@@ -7,7 +7,7 @@ Resource          PO/SearchResults.robot
 Resource          PO/SignIn.robot
 Resource          PO/TopNav.robot
 
-Library  Selenium2Library
+Library  SeleniumLibrary
 
 *** Keywords ***
 Search for Products

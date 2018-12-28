@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation  Amazon top navigation
-Library  Selenium2Library
+Library  SeleniumLibrary
 
 *** Keywords ***
 Search for Products

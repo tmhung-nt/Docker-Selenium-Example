@@ -1,5 +1,5 @@
 *** Settings ***
-Library           Selenium2Library
+Library           SeleniumLibrary
 
 *** Variables ***
 ${SELENIUM}          http://hub:4444/wd/hub
