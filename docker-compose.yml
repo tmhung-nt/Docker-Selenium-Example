@@ -48,7 +48,7 @@ services:
 
   test-gc:
     build: robot
-    command: -v BROWSER:gc --outputdir /out  --log ChromeTesting_log.html --report ChromeTesting_report.html --output ChromeTesting.xml  /tests
+    command: -v BROWSER:gc --settag ChromeTesting  --outputdir /out  --log ChromeTesting_log.html --report ChromeTesting_report.html --output ChromeTesting.xml  /tests
     volumes:
       - ./robot/tests:/tests:ro
       - ./results/gc:/out:rw
@@ -60,7 +60,7 @@ services:
 
   test-ff:
     build: robot
-    command: -v BROWSER:ff --outputdir /out  --log FirefoxTesting_log.html --report FirefoxTesting_report.html --output FirefoxTesting.xml  /tests
+    command: -v BROWSER:ff --settag ChromeTesting  --outputdir /out  --log FirefoxTesting_log.html --report FirefoxTesting_report.html --output FirefoxTesting.xml  /tests
     volumes:
       - ./robot/tests:/tests:ro
       - ./results/ff:/out:rw
