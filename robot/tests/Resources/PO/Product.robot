@@ -3,7 +3,7 @@
 
 *** Keywords ***
 Verify Page Loaded
-    Wait Until Page Contains  Back to search results
+    Wait Until Page Contains  Back to search results  10s
 
 Add to Cart
-    Click Button  id=add-to-cart-button
+    Common.Click GUI Element  id=add-to-wishlist-button-submit

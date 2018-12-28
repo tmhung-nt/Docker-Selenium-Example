@@ -13,3 +13,8 @@ Begin Web Test
 
 End Web Test
     Close Browser
+
+Click GUI Element
+    [Arguments]  ${locator}  ${timeout}=10s
+    Wait Until Page Contains Element  ${locator}   ${timeout}
+    Click Element   ${locator} 

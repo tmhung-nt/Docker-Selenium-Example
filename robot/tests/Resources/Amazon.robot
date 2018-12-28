@@ -11,7 +11,7 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Search for Products
-    LandingPage.Load
+    # LandingPage.Load
     LandingPage.Verify Page Loaded
     TopNav.Search for Products
     SearchResults.Verify Search Completed

@@ -41,7 +41,7 @@ Input Password
     Input Text    password_field    ${password}
 
 Submit Credentials
-    Click Button    login_button
+    Common.Click GUI Element    login_button
 
 Welcome Page Should Be Open
     Location Should Be    ${WELCOME URL}
